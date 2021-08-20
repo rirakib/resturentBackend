@@ -15,11 +15,25 @@
     <link rel="stylesheet" href="./style.css">
 
     <style>
-        .profile_btn{
+        .profile_btn {
             color: #fff;
-            font-size:18px;
-            padding:0px 5px;
+            font-size: 18px;
+            padding: 0px 5px;
         }
+        .user_section{
+            display: flex;
+            justify-content: space-evenly
+        }
+        .user_section li{
+            font-size:18px;
+        }
+        .search_btn{
+            font-size: 22px;
+            color: #fff;
+            cursor: pointer;
+        }
+        
+
     </style>
 
 </head>
@@ -57,12 +71,19 @@
             <a href="#gallery">gallery</a>
             <a href="#review">review</a>
             <a href="#contact">contact</a>
-            
+            <span class="search_btn"><i class="fas fa-search" id="search-btn"></i></span>
+
         </nav>
 
         <div class="icons">
-            <i class="fas fa-search" id="search-btn"></i>
-            
+            <ul class="user_section">
+                <li></li>
+                <li class="user">
+                    <x-app-layout>
+
+                    </x-app-layout>
+                </li>
+            </ul>
         </div>
 
         <form action="" class="search-bar-container">
@@ -76,7 +97,7 @@
 
     <!-- login form container  -->
 
-    
+
 
     <!-- home section starts  -->
 
