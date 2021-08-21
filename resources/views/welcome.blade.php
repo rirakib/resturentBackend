@@ -20,19 +20,38 @@
             font-size: 18px;
             padding: 0px 5px;
         }
-        .user_section{
+
+        .user_section {
             display: flex;
             justify-content: space-evenly
         }
-        .user_section li{
-            font-size:18px;
+
+        .user_section li {
+            font-size: 18px;
         }
-        .search_btn{
+
+        .search_btn {
             font-size: 22px;
             color: #fff;
             cursor: pointer;
         }
-        
+
+        nav.bg-white.border-b.border-gray-100 {
+            padding: 0;
+            margin: 0;
+            height: 0px;
+            display: inline;
+            font-size: 16px;
+        }
+
+        a.block.px-4.py-2.text-sm.leading-5.text-gray-700.hover\:bg-gray-100.focus\:outline-none.focus\:bg-gray-100.transition {
+            font-size: 14px;
+        }
+
+        button.inline-flex.items-center.px-3.py-2.border.border-transparent.text-sm.leading-4.font-medium.rounded-md.text-gray-500.bg-white.hover\:text-gray-700.focus\:outline-none.transition {
+            font-size: 16px;
+            font-weight: 700;
+        }
 
     </style>
 
