@@ -156,22 +156,25 @@
                 <img src="images/order_img.png" alt="">
             </div>
 
-            <form action="">
+            <form action="{{route('orderStore')}}" method="post">
+                @csrf 
+                {{ method_field('GET') }}
+
                 <div class="inputBox">
                     <h3>where to</h3>
-                    <input type="text" placeholder="place name">
+                    <input type="text" placeholder="place name" name='where'>
                 </div>
                 <div class="inputBox">
                     <h3>item name</h3>
-                    <input type="text" placeholder="item name">
+                    <input type="text" placeholder="item name" name='item'>
                 </div>
                 <div class="inputBox">
                     <h3>how many</h3>
-                    <input type="number" placeholder="number of quantity">
+                    <input type="number" name='item-quantity' placeholder="number of quantity">
                 </div>
                 <div class="inputBox">
                     <h3>contact number</h3>
-                    <input type="number" placeholder="  01XXXXXXXXX">
+                    <input type="number" name="number" placeholder="  01XXXXXXXXX">
                 </div>
 
                 <input type="submit" class="btn" value="order now">

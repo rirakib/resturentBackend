@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\HomeController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -21,4 +23,10 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('welcome');
 })->name('dashboard');
 
-Route::get('redirects','App\Http\Controllers\HomeController@index');
+
+Route::get('redirects', [HomeController::class, 'index']);
+Route::get('order', [HomeController::class, 'orderStore'])->name('orderStore');
+
+
+
+
